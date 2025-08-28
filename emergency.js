@@ -13,8 +13,6 @@ for (const lovebtn of loveBtn) {
     });
 }
 
-
-
 /** copy button **/
 const copyBtn = document.getElementsByClassName("copy-btn");
 for (const copybtn of copyBtn) {
@@ -28,9 +26,44 @@ for (const copybtn of copyBtn) {
         copyCount++;
         copyCountEl.innerText = copyCount;
 
-        alert(`✅ Number copied: ${cartNumber}`);
+        alert("✅ Number copied: ${cartNumber}");
     });
 }
 
 
+/** call button **/
+const callBtn = document.getElementsByClassName("call-btn");
+
+for (const callbtn of callBtn) {
+    callbtn.addEventListener("click", function () {
+        const cartTitle = callbtn.parentNode.parentNode.querySelector("h1").innerText;
+        const cartNumber = callbtn.parentNode.parentNode.querySelector("h2").innerText;
+
+        const coin = getEliment("coin-count").innerText;
+        let coinCount = Number(coin) - 20;
+
+        if (coinCount < 0) {
+            alert("❌ You don't have enough coins, you need at least 20 coins to make a call");
+            return;
+        }
+        getEliment("coin-count").innerText = coinCount;
+
+        alert(`📞 calling ${cartTitle} : ${cartNumber}`);
+
+        const cartContenar = getEliment("cart-contenar");
+        const newCart = document.createElement("div");
+        newCart.innerHTML = `
+         <div class="flex justify-between items-center bg-[#fafafa] shadow rounded-2xl p-4 mt-5">
+            <div>
+                <h2 class="font-bold text-1xl">${cartTitle}</h2>
+                <p class="text-gray-500 text-[16px]">${cartNumber}</p>
+            </div>
+            <div>
+                <p class="text-gray-500">${new Date().toLocaleTimeString()}</p>
+            </div>
+         </div>
+        `;
+        cartContenar.append(newCart);
+    });
+}
 
