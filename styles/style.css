@@ -18,3 +18,7 @@
   font-variation-settings:
     "wdth" 100;
 }
+
+.card p {
+  font-family: "Roboto", sans-serif;
+}
