@@ -41,18 +41,18 @@
 
             <!-- nav right -->
 
-            <div class="flex flex-col sm:flex-row items-center gap-7">
+            <div class="font-inter-secondary flex flex-col sm:flex-row items-center gap-7">
                 <div class="flex justify-center items-center gap-3 rounded-full bg-[#41ff6b1a] w-[100px] h-[50px]">
-                    <h1 class="font-bold">0</h1>
+                    <span id="love-count" class=" text-base font-black">0</span>
                     <img class="w-7 h-7" src="./assets/heart.png" alt="">
                 </div>
                 <div class="flex justify-center items-center gap-3 rounded-full bg-[#41ff6b1a] w-[100px] h-[50px]">
-                    <h1 class="font-bold">100</h1>
-                    <img class="w-6 h-6" src="./assets/coin.png" alt="">
+                    <span id="coin-count" class="text-base font-black">100</span>
+                    <img class="w-7 h-7" src="./assets/coin.png" alt="">
                 </div>
 
                 <div class="flex justify-center items-center gap-3 rounded-full bg-[#00a63e] w-[100px] h-[50px]">
-                    <h1 class="font-bold text-white"><span>0 </span>Copy</h1>
+                    <span id="copy-count" class="text-base font-bold">0</span><h1 class="text-base font-semibold">Copy</h1>
                 </div>
             </div>
         </nav>
@@ -74,6 +74,7 @@
                     <div class="w-14 h-14 flex items-center justify-center bg-[#FFE3E2] rounded-lg">
                         <img class="w-8" src="./assets/emergency.png" alt="">
                     </div>
+                    <button id="heart-btn" class="heart-btn">
                     <i class="fa-regular fa-heart text-2xl text-gray-500 hover:text-[#006747]"></i>
                 </div>
                 <h1 class="hind-madurai text-[24px] font-bold text-[#013223]">National Emergency Number</h1>
@@ -85,11 +86,11 @@
                 </div>
                 <div class="flex gap-2 mt-4">
                     <button
-                        class="flex items-center justify-center gap-2 w-1/2 py-2 border border-gray-200 rounded-lg hover:bg-gray-200">
+                        class="copy-btn flex items-center justify-center gap-2 w-1/2 py-2 border border-gray-200 rounded-lg hover:bg-gray-200">
                         <i class="fa-regular fa-copy"></i> <span class="roboto">Copy</span>
                     </button>
                     <button
-                        class="flex items-center justify-center gap-2 w-1/2 py-2 bg-[#00A63E] text-white rounded-lg hover:bg-green-700">
+                        class="call-btn flex items-center justify-center gap-2 w-1/2 py-2 bg-[#00A63E] text-white rounded-lg hover:bg-green-700">
                         <img src="./assets/call.svg" alt=""> <span class="roboto">Call</span>
                     </button>
                 </div>
@@ -99,7 +100,9 @@
                     <div class="w-14 h-14 flex items-center justify-center bg-[#FFE3E2] rounded-lg">
                         <img class="w-8" src="./assets/police.png" alt="">
                     </div>
+                    <button id="heart-btn" class="heart-btn">
                     <i class="fa-regular fa-heart text-2xl text-gray-500 hover:text-[#006747]"></i>
+                </button>
                 </div>
                 <h1 class="hind-madurai text-[24px] font-bold text-[#013223]">Police Helpline Number</h1>
                 <p class="roboto text-[18px] text-gray-600 mb-2">Police</p>
@@ -110,11 +113,11 @@
                 </div>
                 <div class="flex gap-2 mt-4">
                     <button
-                        class="flex items-center justify-center gap-2 w-1/2 py-2 border border-gray-200 rounded-lg hover:bg-gray-200">
+                        class="copy-btn flex items-center justify-center gap-2 w-1/2 py-2 border border-gray-200 rounded-lg hover:bg-gray-200">
                         <i class="fa-regular fa-copy"></i> <span class="roboto">Copy</span>
                     </button>
                     <button
-                        class="flex items-center justify-center gap-2 w-1/2 py-2 bg-[#00A63E] text-white rounded-lg hover:bg-green-700">
+                        class="call-btn flex items-center justify-center gap-2 w-1/2 py-2 bg-[#00A63E] text-white rounded-lg hover:bg-green-700">
                         <img src="./assets/call.svg" alt=""> <span class="roboto">Call</span>
                     </button>
                 </div>
@@ -124,7 +127,9 @@
                     <div class="w-14 h-14 flex items-center justify-center bg-[#FFE3E2] rounded-lg">
                         <img class="w-8" src="./assets/fire-service.png" alt="">
                     </div>
+                    <button id="heart-btn" class="heart-btn">
                     <i class="fa-regular fa-heart text-2xl text-gray-500 hover:text-[#006747]"></i>
+                    </button>
                 </div>
                 <h1 class="hind-madurai text-[24px] font-bold text-[#013223]">Fire Service Number</h1>
                 <p class="roboto text-[18px] text-gray-600 mb-2">Fire Service</p>
@@ -135,11 +140,11 @@
                 </div>
                 <div class="flex gap-2 mt-4">
                     <button
-                        class="flex items-center justify-center gap-2 w-1/2 py-2 border border-gray-200 rounded-lg hover:bg-gray-200">
+                        class="copy-btn flex items-center justify-center gap-2 w-1/2 py-2 border border-gray-200 rounded-lg hover:bg-gray-200">
                         <i class="fa-regular fa-copy"></i> <span class="roboto">Copy</span>
                     </button>
                     <button
-                        class="flex items-center justify-center gap-2 w-1/2 py-2 bg-[#00A63E] text-white rounded-lg hover:bg-green-700">
+                        class="call-btn flex items-center justify-center gap-2 w-1/2 py-2 bg-[#00A63E] text-white rounded-lg hover:bg-green-700">
                         <img src="./assets/call.svg" alt=""> <span class="roboto">Call</span>
                     </button>
                 </div>
@@ -149,7 +154,9 @@
                     <div class="w-14 h-14 flex items-center justify-center bg-[#FFE3E2] rounded-lg">
                         <img class="w-8" src="./assets/ambulance.png" alt="">
                     </div>
+                    <button id="heart-btn" class="heart-btn">
                     <i class="fa-regular fa-heart text-2xl text-gray-500 hover:text-[#006747]"></i>
+                    </button>
                 </div>
                 <h1 class="hind-madurai text-[24px] font-bold text-[#013223]">Ambulance Service</h1>
                 <p class="roboto text-[18px] text-gray-600 mb-2">Ambulance</p>
@@ -160,11 +167,11 @@
                 </div>
                 <div class="flex gap-2 mt-4">
                     <button
-                        class="flex items-center justify-center gap-2 w-1/2 py-2 border border-gray-200 rounded-lg hover:bg-gray-200">
+                        class="copy-btn flex items-center justify-center gap-2 w-1/2 py-2 border border-gray-200 rounded-lg hover:bg-gray-200">
                         <i class="fa-regular fa-copy"></i> <span class="roboto">Copy</span>
                     </button>
                     <button
-                        class="flex items-center justify-center gap-2 w-1/2 py-2 bg-[#00A63E] text-white rounded-lg hover:bg-green-700">
+                        class="call-btn flex items-center justify-center gap-2 w-1/2 py-2 bg-[#00A63E] text-white rounded-lg hover:bg-green-700">
                         <img src="./assets/call.svg" alt=""> <span class="roboto">Call</span>
                     </button>
                 </div>
@@ -174,7 +181,9 @@
                     <div class="w-14 h-14 flex items-center justify-center bg-[#FFE3E2] rounded-lg">
                         <img class="w-8" src="./assets/emergency.png" alt="">
                     </div>
+                    <button id="heart-btn" class="heart-btn">
                     <i class="fa-regular fa-heart text-2xl text-gray-500 hover:text-[#006747]"></i>
+                    </button>
                 </div>
                 <h1 class="hind-madurai text-[24px] font-bold text-[#013223]">Women & Child Helpline</h1>
                 <p class="roboto text-[18px] text-gray-600 mb-2">Women & Child Helpline</p>
@@ -185,11 +194,11 @@
                 </div>
                 <div class="flex gap-2 mt-4">
                     <button
-                        class="flex items-center justify-center gap-2 w-1/2 py-2 border border-gray-200 rounded-lg hover:bg-gray-200">
+                        class="copy-btn flex items-center justify-center gap-2 w-1/2 py-2 border border-gray-200 rounded-lg hover:bg-gray-200">
                         <i class="fa-regular fa-copy"></i> <span class="roboto">Copy</span>
                     </button>
                     <button
-                        class="flex items-center justify-center gap-2 w-1/2 py-2 bg-[#00A63E] text-white rounded-lg hover:bg-green-700">
+                        class="call-btn flex items-center justify-center gap-2 w-1/2 py-2 bg-[#00A63E] text-white rounded-lg hover:bg-green-700">
                         <img src="./assets/call.svg" alt=""> <span class="roboto">Call</span>
                     </button>
                 </div>
@@ -199,7 +208,9 @@
                     <div class="w-14 h-14 flex items-center justify-center bg-[#FFE3E2] rounded-lg">
                         <img class="w-8" src="./assets/emergency.png" alt="">
                     </div>
+                    <button id="heart-btn" class="heart-btn">
                     <i class="fa-regular fa-heart text-2xl text-gray-500 hover:text-[#006747]"></i>
+                    </button>
                 </div>
                 <h1 class="hind-madurai text-[24px] font-bold text-[#013223]">Anti-Corruption Helpline</h1>
                 <p class="roboto text-[18px] text-gray-600 mb-2">Anti-Corruption</p>
@@ -210,11 +221,11 @@
                 </div>
                 <div class="flex gap-2 mt-4">
                     <button
-                        class="flex items-center justify-center gap-2 w-1/2 py-2 border border-gray-200 rounded-lg hover:bg-gray-200">
+                        class="copy-btn flex items-center justify-center gap-2 w-1/2 py-2 border border-gray-200 rounded-lg hover:bg-gray-200">
                         <i class="fa-regular fa-copy"></i> <span class="roboto">Copy</span>
                     </button>
                     <button
-                        class="flex items-center justify-center gap-2 w-1/2 py-2 bg-[#00A63E] text-white rounded-lg hover:bg-green-700">
+                        class="call-btn flex items-center justify-center gap-2 w-1/2 py-2 bg-[#00A63E] text-white rounded-lg hover:bg-green-700">
                         <img src="./assets/call.svg" alt=""></i> <span class="roboto">Call</span>
                     </button>
                 </div>
@@ -224,7 +235,9 @@
                     <div class="w-14 h-14 flex items-center justify-center bg-[#FFE3E2] rounded-lg">
                         <img class="w-8" src="./assets/emergency.png" alt="">
                     </div>
+                    <button id="heart-btn" class="heart-btn">
                     <i class="fa-regular fa-heart text-2xl text-gray-500 hover:text-[#006747]"></i>
+                    </button>
                 </div>
                 <h1 class="hind-madurai text-[24px] font-bold text-[#013223]">Electricity Helpline</h1>
                 <p class="roboto text-[18px] text-[gray-600] mb-2">Electricity Outage</p>
@@ -249,7 +262,9 @@
                     <div class="w-14 h-14 flex items-center justify-center bg-[#FFE3E2] rounded-lg">
                         <img class="w-8" src="./assets/emergency.png" alt="">
                     </div>
+                    <button id="heart-btn" class="heart-btn">
                     <i class="fa-regular fa-heart text-2xl text-gray-500 hover:text-[#006747]"></i>
+                    </button>
                 </div>
                 <h1 class="hind-madurai text-[24px] font-bold text-[#013223]">Brac Helpline</h1>
                 <p class="roboto text-[18px] text-gray-600 mb-2">Brac</p>
@@ -260,11 +275,11 @@
                 </div>
                 <div class="flex gap-2 mt-4">
                     <button
-                        class="flex items-center justify-center gap-2 w-1/2 py-2 border border-gray-200 rounded-lg hover:bg-gray-200">
+                        class="copy-btn flex items-center justify-center gap-2 w-1/2 py-2 border border-gray-200 rounded-lg hover:bg-gray-200">
                         <i class="fa-regular fa-copy"></i> <span class="roboto">Copy</span>
                     </button>
                     <button
-                        class="flex items-center justify-center gap-2 w-1/2 py-2 bg-[#00A63E] text-white rounded-lg hover:bg-green-700">
+                        class="call-btn flex items-center justify-center gap-2 w-1/2 py-2 bg-[#00A63E] text-white rounded-lg hover:bg-green-700">
                         <img src="./assets/call.svg" alt=""></i> <span class="roboto">Call</span>
                     </button>
                 </div>
@@ -274,7 +289,9 @@
                     <div class="w-14 h-14 flex items-center justify-center bg-[#FFE3E2] rounded-lg">
                         <img class="w-8" src="./assets/emergency.png" alt="">
                     </div>
+                    <button id="heart-btn" class="heart-btn">
                     <i class="fa-regular fa-heart text-2xl text-gray-500 hover:text-[#006747]"></i>
+                    </button>
                 </div>
                 <h1 class="hind-madurai text-[24px] font-bold text-[#013223]">Bangladesh Railway Helpline </h1>
                 <p class="roboto text-[18px] text-gray-600 mb-2">Bangladesh Railway</p>
@@ -286,10 +303,10 @@
                 <div class="flex gap-2 mt-4">
                     <button
                         class="flex items-center justify-center gap-2 w-1/2 py-2 border border-gray-200 rounded-lg hover:bg-gray-200">
-                        <i class="fa-regular fa-copy"></i> <span class="roboto">Copy</span>
+                        <i class="copy-btn fa-regular fa-copy"></i> <span class="roboto">Copy</span>
                     </button>
                     <button
-                        class="flex items-center justify-center gap-2 w-1/2 py-2 bg-[#00A63E] text-white rounded-lg hover:bg-green-700">
+                        class="call-btn flex items-center justify-center gap-2 w-1/2 py-2 bg-[#00A63E] text-white rounded-lg hover:bg-green-700">
                         <img src="./assets/call.svg" alt=""></i> <span class="roboto">Call</span>
                     </button>
                 </div>
@@ -316,6 +333,7 @@
         </div>
     </main>
 
+    <script src="./emergency.js"></script>
     <footer>
 
     </footer>
